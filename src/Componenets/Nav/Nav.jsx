@@ -19,7 +19,7 @@ const Nav = () => {
                         console.log('Is Active:', isActive);
                         return isActive
                             ? 'font-bold text-blue-600 hover:text-lime-300'
-                            : 'font-bold text-white hover:text-blue-600';
+                            : 'font-bold text-black hover:text-blue-600';
                     }}
                     to='/'
                 >
@@ -32,24 +32,24 @@ const Nav = () => {
                     className={({ isActive }) =>
                         isActive
                             ? 'font-bold text-blue-600 hover:text-lime-300'
-                            : 'font-bold text-white hover:text-blue-600'
+                            : 'font-bold text-black hover:text-blue-600'
                     }
-                    to='/allCollections'
+                    to='/projects'
                 >
-                    Our Collections
+                    Projects
                 </NavLink>
             </li>
         </>
     );
     return (
-        <div>
+        <div className='bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
             <div className="navbar bg-transparent ">
-                <div className="navbar-start">
+                <div className="navbar-start fixed ">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost  ">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
+                                className="h-10 w-10"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -67,37 +67,36 @@ const Nav = () => {
                         </ul>
                     </div>
 
-                    <div className="">
-                        <a
-                            className=" text-2xl text-white px-10 font-bold inline-block"
-                            onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave}
+
+
+
+
+                </div>
+                <div className="navbar-end w-full">
+                    <a
+                        className="text-2xl text-white px-40 font-bold inline-block relative" // Added relative positioning
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        {/* K.I.H Text */}
+                        <span
+                            className={`block transition-opacity duration-300 ease-in-out ${showKhandaker ? 'opacity-0' : 'opacity-100'}`}
                         >
-                            {/* K.I.H Text */}
-                            <span
-                                className={`block transition-opacity duration-300 ease-in-out ${showKhandaker ? 'opacity-0' : 'opacity-100'}`}
-                            >
-                                K.I.H
-                            </span>
+                            K.I.H
+                        </span>
 
-                            {/* Khandaker Text */}
-                            <span
-                                className={`absolute top-5 px-5 left-0 transition-opacity duration-300 ease-in-out ${showKhandaker ? 'opacity-100 animate__animated animate__fadeInRight' : 'opacity-0'}`}
-                            >
-                                Khandaker Istekharul Haque
-                            </span>
-                        </a>
-                    </div>
-
-
-
+                        {/* Khandaker Text */}
+                        <span
+                            className={`absolute top-0 left-0 transition-opacity duration-300 ease-in-out ${showKhandaker ? 'opacity-100 animate__animated animate__fadeInRight' : 'opacity-0'}`}
+                        >
+                            Khandaker Istekharul Haque
+                        </span>
+                    </a>
                 </div>
-                <div className="navbar-end hidden lg:flex">
-                    <ul className=' menu-horizontal gap-5 px-1 text-yellow'>
-                        {links}
-                    </ul>
-                </div>
+               
+
             </div>
+            
 
         </div>
     );

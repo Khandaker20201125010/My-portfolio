@@ -1,13 +1,16 @@
 import React from 'react';
-import Nav from '../Componenets/Nav/Nav';
 import Banner from '../Componenets/Banner/Banner';
+import DesignandEngineering from '../Componenets/DesignandEngineering/DesignandEngineering';
+import BuildAndDesign from '../Componenets/BuildAndDesign/BuildAndDesign';
 
 const Home = () => {
     return (
       <div>
-          <div className='bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
-           <Nav></Nav>
+          <div className=''>
+          
            <Banner></Banner>
+           <DesignandEngineering></DesignandEngineering>
+           <BuildAndDesign></BuildAndDesign>
        
         </div>  
       </div>
