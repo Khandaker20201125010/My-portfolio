@@ -1,6 +1,6 @@
 import React from 'react';
 import prof from '../../assets/images/profile.png'
-
+import { GoArrowDown } from "react-icons/go";
 const Banner = () => {
     return (
         <div className='bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
@@ -15,6 +15,7 @@ const Banner = () => {
                 <img className='w-96 h-96 rounded-lg' src={prof} alt="" />
 
             </div>
+            
             
         </div>
         </div>
