@@ -59,9 +59,9 @@ const Nav = () => {
                         {/* Burger Icon */}
                         <div onClick={handleClick}>
                             {click ? (
-                                <AiOutlineClose size={30} className="text-xl text-purple-500 lg:text-2xl cursor-pointer" />
+                                <AiOutlineClose size={30} className="text-xl text-yellow-500 lg:text-2xl cursor-pointer" />
                             ) : (
-                                <SlMenu size={30} className="text-xl lg:text-2xl text-purple-500 font-bold cursor-pointer" />
+                                <SlMenu size={30} className="text-xl lg:text-2xl text-yellow-500 font-bold cursor-pointer" />
                             )}
                         </div>
                     </div>
