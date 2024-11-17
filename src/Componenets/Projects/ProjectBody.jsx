@@ -1,10 +1,14 @@
 import React from "react";
-import 'animate.css';
+import "animate.css";
 const ProjectBody = ({ image, title, description, links }) => {
   return (
     <div className="card bg-base-100 w-96 shadow-xl animate__animated animate__zoomIn ">
       <figure>
-        <img className="w-full h-64 p-6 rounded-2xl skeleton" src={image} alt={`${title} logo`} />
+        <img
+          className="w-full h-64 p-6 rounded-2xl skeleton"
+          src={image}
+          alt={`${title} logo`}
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">

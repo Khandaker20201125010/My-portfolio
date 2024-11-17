@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectBody from "./ProjectBody";
 import image1 from "../../assets/images/logo.png";
 import image2 from "../../assets/images/logo2.png";
